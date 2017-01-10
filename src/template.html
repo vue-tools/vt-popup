@@ -1,0 +1,9 @@
+<transition name="ui-popup-fade">
+    <div class="ui-popup" v-show="visible" @click.self="$emit('hide')">
+        <transition name="ui-popup-slideInUp">
+            <div class="ui-popup__container" v-show="visible" :class="{ 'ui-popup__container--full' : isFull }">
+                <slot></slot>
+            </div>
+        </transition>
+    </div>
+</transition>

@@ -1,0 +1,34 @@
+.ui-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ui-popup__container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.ui-popup__container--full {
+    height: 100%;
+}
+.ui-popup-fade-enter,
+.ui-popup-fade-leave-active {
+    opacity: 0;
+}
+.ui-popup-fade-enter-active,
+.ui-popup-fade-leave-active {
+    transition: opacity .4s;
+}
+.ui-popup-slideInUp-enter,
+.ui-popup-slideInUp-leave-active {
+    transform: translate3d(0, 100%, 0);
+}
+.ui-popup-slideInUp-enter-active,
+.ui-popup-slideInUp-leave-active {
+    transition: transform .3s;
+}
